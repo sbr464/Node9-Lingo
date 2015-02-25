@@ -1,0 +1,9 @@
+extends layout
+
+block content
+	h1 Hello Boulder!
+	form(id="translate-form", method="POST", action="/translatePost")
+		input#wordInput(type="text", name="wordInput", placeholder="Enter something to translate")
+		select#translateFrom(name="translateFrom")
+		select#translateTo(name="translateTo")
+		input(type="submit") 
